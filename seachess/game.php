@@ -65,7 +65,7 @@ $results=$resultCollection->getResults($offset,$per_page,$_SESSION['username']);
     </div>
     <div class="col-md-3  col-xs-6 col-sm-6">
         <div>
-            <button class="btn btn-logout" type="submit" name="logout" value="Logout >>"><span><a href="login.php">Logout</a> </span></button>
+            <button class="btn btn-logout" type="submit" name="logout" value="Logout"><span><a href="login.php">Logout</a> </span></button>
         </div>
         <div style="float:right; padding-top:10px;">
             <label for="" class="username" >Username:  </label>
