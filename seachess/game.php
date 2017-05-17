@@ -159,5 +159,6 @@ $results=$resultCollection->getResults($offset,$per_page,$_SESSION['username']);
     <div class="row "><div class="col-md-12 col-xs-12 col-sm-12 frame"></div></div>
 </div>
 </div>
+ <script src="js/game.js"></script>
 
 <?php require_once "common/footer.php"?>
