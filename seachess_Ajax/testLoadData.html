@@ -1,0 +1,46 @@
+<?php require_once "common/header.php";?>
+
+
+<body>
+<button id="show1">Load data</button>
+<div>
+    <table class="table table-condensed table-bordered" hidden id="table2">
+        <tr><th colspan="2">   0: lose; 1: equal; 2:win</th></tr>
+
+    </table>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#show1").on('click',function(){
+             $.ajax({
+                 url:'http://mylocal.dev/MyPHP_files/seachess/php/loadResults.php',
+                 type:'GET',
+                 data:{},
+                 dataType: 'json',
+                 //cache: false,
+                 success: function(response){
+                     var data=Jquery.parseJSON(response);
+                     //alert(response);
+                    $.each(data, function(index, element) {
+                        /* $('#table2').append($('<tr><td>', {
+                         text: element.result
+
+                         })); */
+                        $('#table2').html('<tr><td>'+element.id+'</td><td>'+element.result+'</td></tr>');
+
+                     });
+                 console.log(data);
+
+                 }
+
+            });
+             return false;
+     });
+
+    });
+
+
+</script>
+</body>
+</html>
