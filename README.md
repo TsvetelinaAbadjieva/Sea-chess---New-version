@@ -1,4 +1,4 @@
-# Sea-chess---New-version
+# Sea-chess
 added feature for Facebook login
 
 A little PHP/ MySQL, JQuery application, releasing the game Sea-Chess.
